@@ -1,0 +1,39 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Logs
+logs
+*.log
+
+# Runtime
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# Build
+dist/
+build/
+coverage/
+.tmp/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# OS
+Thumbs.db
+
+# Misc
+*.tgz
+
+# Ignore node_modules in any subfolder
+**/node_modules/
