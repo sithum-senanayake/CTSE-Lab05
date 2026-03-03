@@ -4,8 +4,12 @@ app.use(express.json());
 
 const PORT = 8082;
 
-let orders = [];
-let idCounter = 1;
+let orders = [
+  { id: 1, item: "Book", quantity: 2, customerId: 101, status: "PENDING" },
+  { id: 2, item: "Laptop", quantity: 1, customerId: 102, status: "COMPLETED" },
+  { id: 3, item: "Phone", quantity: 3, customerId: 103, status: "PENDING" }
+];
+let idCounter = 4;
 
 app.get("/orders", (req, res) => {
   res.json(orders);
